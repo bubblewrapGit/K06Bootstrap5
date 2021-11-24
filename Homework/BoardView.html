@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoardWrite.html</title>
+    <link rel="stylesheet" href="../bootstrap-5.1.3/css/bootstrap.css">
+    <script src="../bootstrap-5.1.3/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <header id="header">
+        
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+            <div class="container-fluid">
+                <h1 class="navbar-brand navbar-nav">
+                    <a class="p-2" href="#">
+                        <img src="./images/logo_center_v2.jpg" alt="한국소프트웨어인재개발원" style="width:100px;">
+                    </a>
+                </h1>
+
+                <div class="navbar-nav container-fluid">
+                    <ul class="gnb_nav_menu navbar-nav">
+                        <li class="nav-item p-2"><a class="nav-link" href="#">홈으로</a></li>
+                        <li class="nav-item p-2"><a class="nav-link" href="#">회원제게시판</a></li>
+                        <li class="nav-item p-2"><a class="nav-link" href="#">자료실</a></li>
+                        <li class="nav-item dropdown p-2">
+                            <button class="nav-link dropdown-toggle btn border border-0" data-bs-toggle="dropdown">임시Menu</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">임시메뉴1</a></li>
+                                <li><a class="dropdown-item" href="#">임시메뉴2</a></li>
+                                <li><a class="dropdown-item" href="#">임시메뉴3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="gnb_join_menu navbar-nav" style="margin-left: auto;">
+                        <li class="nav-item p-2 d-flex">
+                            <input class="h-100 rounded-start border-0" type="text"><button class="search btn btn-primary border-0 border-secondary rounded-end  form-control border-start" type="button" style="border-top-left-radius: 0rem !important; border-bottom-left-radius: 0rem !important; width: 50px;">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </li>
+                        <li class="nav-item p-2"><a class="nav-link" href="#"><i class="bi bi-person-plus-fill m-2"></i>회원가입</a></li>
+                        <li class="nav-item p-2"><a class="nav-link" href="#"><i class="bi bi-box-arrow-in-right m-2"></i>로그인</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="container" class="container-fluid">
+        <div class="con_wrap row p-5">
+            <div class="lnb_menu col-sm-2">
+                <h2 class="bg-primary p-5 rounded-3 text-white">현재메뉴명</h2>
+                <ul class="lnb_nav navbar-nav">
+                    <li class="nav-item p-2"><a class="nav-link" href="#">회원제게시판</a></li>
+                    <li class="nav-item p-2"><a class="nav-link" href="#">자료실</a></li>
+                    <li class="nav-item p-2">
+                        <button class="nav-link dropdown-toggle btn border border-0" data-bs-toggle="dropdown">임시Menu</button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item p-2"><a class="nav-link" href="#">임시메뉴1</a></li>
+                            <li class="dropdown-item p-2"><a class="nav-link" href="#">임시메뉴2</a></li>
+                            <li class="dropdown-item p-2"><a class="nav-link" href="#">임시메뉴3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="main_board col-sm-10 p-4">
+                <h2 class="h2 pt-2 pb-4">게시판 내용보기 <span class="h6">- 자유게시판</span></h2>
+
+                <div class="board_write_table pt-4 pb-4">
+                    <table class="table table-bordered" style="border-top:2px solid black;">
+                        <tbody>
+                            <tr>
+                                <th class="text-center p-2" width="160px" style="line-height: 2.8rem;">작성자</th>
+                                <td style="line-height: 2.8rem;">홍길동</td>
+                                <th class="text-center p-2" width="160px" style="line-height: 2.8rem;">작성일</th>
+                                <td style="line-height: 2.8rem;">2018-01-05</td>
+                            </tr>
+                            <tr>
+                                <th class="text-center p-2" width="160px" style="line-height: 2.8rem;">이메일</th>
+                                <td style="line-height: 2.8rem;">ksbok0713@gmail.com</td>
+                                <th class="text-center p-2" width="160px" style="line-height: 2.8rem;">조회수</th>
+                                <td style="line-height: 2.8rem;">100</td>
+                            </tr>
+                            <tr>
+                                <th class="text-center p-2" width="160px" style="line-height: 2.8rem;">제목</th>
+                                <td colspan="3" style="line-height: 2.8rem;">제목영역입니다.</td>
+                            </tr>
+                            <tr>
+                                <th class="text-center p-2" width="160px" style="line-height: 7.8rem;">내용</th>
+                                <td colspan="3">
+                                    내용영역입니다<br> 
+                                    내용영역입니다<br>
+                                    내용영역입니다<br>
+                                    내용영역입니다<br>
+                                    내용영역입니다
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="text-center p-2" width="160px" style="line-height: 2.8rem;">첨부파일</th>
+                                <td style="line-height: 2.8rem;">파일명.jpg</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="board_btn">
+                    <ul class="d-flex justify-content-end list-group list-group-horizontal">
+                        <li class="list-group-item border-0 p-1"><button type="button" class="btn btn-light">Reset</button></li>
+                        <li class="list-group-item border-0 p-1"><button type="button" class="btn btn-dark"><a class="text-decoration-none text-white" href="./BoardWrite.html">글쓰기</a></button></li>
+                        <li class="list-group-item border-0 p-1"><button type="button" class="btn btn-primary">수정하기</button></li>
+                        <li class="list-group-item border-0 p-1"><button type="button" class="btn btn-success">삭제하기</button></li>
+                        <li class="list-group-item border-0 p-1"><button type="button" class="btn btn-info text-white">답글쓰기</button></li>
+                        <li class="list-group-item border-0 p-1"><button type="button" class="btn btn-warning"><a class="text-decoration-none text-white" href="./BoardList.html">리스트보기</a></button></li>
+                        <li class="list-group-item border-0 p-1 me-5"><button type="button" class="btn btn-danger">전송하기</button></li>
+                    </ul>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer_wrap d-flex border-top border-top-3 border-dark pt-3">
+            <div class="col-sm-2 ps-5">
+                <h2>강성복&trade;</h2>
+            </div>
+            <ul class="col-sm-10 d-flex justify-content-center mb-2">
+                <li class="list-unstyled pe-5"><b>Email : </b>ksbok0713@google.com</li>
+                <li class="list-unstyled pe-5"><b>Mobile : </b>010-5694-8240</li>
+                <li class="list-unstyled"><b>Address : </b>경기도 의왕시</li>
+            </ul>
+        </div>
+        <p class="text-center">copyright &copy; 2021 bubbleWrap. All right reserved.</p>
+    </footer>
+</body>
+</html>
